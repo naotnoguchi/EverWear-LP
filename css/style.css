@@ -357,28 +357,57 @@ ul {
     background: #f8f9fa;
 }
 
-.features-grid {
+.features-showcase {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.feature-with-image {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: 1fr 300px;
+    gap: 3rem;
+    align-items: center;
+    background: white;
+    padding: 3rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.feature-with-image.reverse {
+    grid-template-columns: 300px 1fr;
+}
+
+.feature-with-image.reverse .feature-content {
+    order: 2;
+}
+
+.feature-with-image.reverse .feature-image {
+    order: 1;
+}
+
+.feature-content {
+    display: flex;
+    flex-direction: column;
     gap: 2rem;
 }
 
 .feature-card {
-    background: white;
-    padding: 2rem;
-    border-radius: 12px;
-    text-align: center;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    transition: all 0.3s;
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
+    text-align: left;
+    box-shadow: none;
+    transition: none;
 }
 
 .feature-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    transform: none;
+    box-shadow: none;
 }
 
 .feature-icon {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-bottom: 1rem;
 }
 
@@ -391,6 +420,19 @@ ul {
 .feature-card p {
     color: #666;
     line-height: 1.6;
+}
+
+.feature-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-screenshot {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
 }
 
 /* ========================================
@@ -762,6 +804,26 @@ details[open] .faq-icon {
         padding: 2rem;
     }
 
+    /* 機能セクション */
+    .feature-with-image {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+    .feature-with-image.reverse {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-with-image.reverse .feature-content,
+    .feature-with-image.reverse .feature-image {
+        order: initial;
+    }
+
+    .feature-screenshot {
+        max-width: 250px;
+    }
+
     /* 使い方 */
     .steps {
         flex-direction: column;
@@ -808,8 +870,16 @@ details[open] .faq-icon {
     }
 
     .problem-grid,
-    .features-grid,
     .impact-grid {
         grid-template-columns: 1fr;
+    }
+
+    .feature-with-image {
+        padding: 1.5rem;
+        gap: 1.5rem;
+    }
+
+    .feature-screenshot {
+        max-width: 220px;
     }
 } 

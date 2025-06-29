@@ -69,7 +69,7 @@
             </div>
             <div class="hero-image">
                 <div class="phone-mockup">
-                    <img src="images/logo.png" alt="EverWearアプリ画面" class="app-screenshot">
+                    <img src="screen-shot_home.png" alt="EverWearアプリ画面" class="app-screenshot">
                 </div>
             </div>
         </div>
@@ -140,36 +140,59 @@
     <section id="features" class="features">
         <div class="container">
             <h2 class="section-title">主な機能</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">📸</div>
-                    <h3>かんたん登録</h3>
-                    <p>写真を撮って、洗濯ルールを設定するだけ。30秒で登録完了。</p>
+            <div class="features-showcase">
+                <div class="feature-with-image">
+                    <div class="feature-content">
+                        <div class="feature-card">
+                            <div class="feature-icon">📸</div>
+                            <h3>かんたん登録</h3>
+                            <p>写真を撮って、カテゴリを選ぶだけ。デフォルト設定で30秒で登録完了。</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">👆</div>
+                            <h3>ワンタップ記録</h3>
+                            <p>アイテムと日付を選択するだけの簡単操作。過去の記録も遡って登録可能。</p>
+                        </div>
+                    </div>
+                    <div class="feature-image">
+                        <img src="screen-shot_item.png" alt="アイテム詳細画面" class="feature-screenshot">
+                    </div>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">👆</div>
-                    <h3>ワンタップ記録</h3>
-                    <p>着用・洗濯をワンタップで記録。面倒な入力は一切不要。</p>
+                
+                <div class="feature-with-image reverse">
+                    <div class="feature-content">
+                        <div class="feature-card">
+                            <div class="feature-icon">📅</div>
+                            <h3>履歴カレンダー</h3>
+                            <p>いつ何を着たか、カレンダーでひと目で確認。コーデの振り返りにも。</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">📊</div>
+                            <h3>洗濯管理</h3>
+                            <p>各アイテムの洗濯タイミングを一覧で表示。最適なタイミングが一目瞭然。</p>
+                        </div>
+                    </div>
+                    <div class="feature-image">
+                        <img src="screen-shot_history.png" alt="履歴カレンダー画面" class="feature-screenshot">
+                    </div>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">📅</div>
-                    <h3>履歴カレンダー</h3>
-                    <p>いつ何を着たか、カレンダーでひと目で確認。コーデの振り返りにも。</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">📊</div>
-                    <h3>統計・分析</h3>
-                    <p>着用頻度ランキングや洗濯効率をグラフで可視化。</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🏆</div>
-                    <h3>バッジシステム</h3>
-                    <p>目標達成でバッジを獲得。楽しみながら続けられる。</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🌍</div>
-                    <h3>環境貢献の見える化</h3>
-                    <p>CO2削減量や節水量を数値化。地球にやさしい生活を実感。</p>
+                
+                <div class="feature-with-image">
+                    <div class="feature-content">
+                        <div class="feature-card">
+                            <div class="feature-icon">📊</div>
+                            <h3>統計・分析</h3>
+                            <p>洗濯効率や環境への貢献度をグラフで可視化。データで実感できる節約効果。</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">🏆</div>
+                            <h3>バッジシステム</h3>
+                            <p>目標達成でバッジを獲得。楽しみながら続けられるゲーミフィケーション。</p>
+                        </div>
+                    </div>
+                    <div class="feature-image">
+                        <img src="screen-shot_stats.png" alt="統計・分析画面" class="feature-screenshot">
+                    </div>
                 </div>
             </div>
         </div>
@@ -183,7 +206,7 @@
                 <div class="step">
                     <div class="step-number">1</div>
                     <h3>洋服を登録</h3>
-                    <p>写真を撮って、「何回着たら洗濯するか」を設定</p>
+                    <p>写真を撮って、カテゴリを選択（洗濯ルールはデフォルト3回）</p>
                 </div>
                 <div class="step-arrow">→</div>
                 <div class="step">
@@ -195,7 +218,7 @@
                 <div class="step">
                     <div class="step-number">3</div>
                     <h3>最適なタイミングで洗濯</h3>
-                    <p>設定回数に達したら通知。洋服が長持ち！</p>
+                    <p>設定回数に達したら洗濯。洋服が長持ち！</p>
                 </div>
             </div>
         </div>
@@ -215,11 +238,10 @@
                     <ul class="pricing-features">
                         <li>✅ 5アイテムまで登録可能</li>
                         <li>✅ 着用・洗濯記録</li>
-                        <li>✅ 基本的な通知機能</li>
-                        <li>❌ 高度な分析機能</li>
+                        <li>✅ 高度な統計・分析</li>
                         <li>❌ 無制限アイテム登録</li>
+                        <li>❌ 環境貢献レポート</li>
                     </ul>
-                    <a href="#" class="btn btn-outline">無料で始める</a>
                 </div>
                 <div class="pricing-card featured">
                     <div class="pricing-badge">おすすめ</div>
@@ -228,15 +250,14 @@
                         <span class="price-amount">¥480</span>
                         <span class="price-period">/月</span>
                     </div>
-                    <p class="pricing-note">年額プランなら¥4,800（月額¥400相当）</p>
+                    <p class="pricing-note">年額プランなら¥3,800（月額¥317相当）</p>
                     <ul class="pricing-features">
                         <li>✅ 無制限アイテム登録</li>
                         <li>✅ 全ての基本機能</li>
                         <li>✅ 高度な統計・分析</li>
                         <li>✅ 環境貢献レポート</li>
-                        <li>✅ 広告非表示</li>
+                        <li>✅ データエクスポート機能</li>
                     </ul>
-                    <a href="#" class="btn btn-primary">プレミアムを試す</a>
                 </div>
             </div>
         </div>
@@ -277,7 +298,7 @@
                         <span class="faq-icon">+</span>
                     </summary>
                     <div class="faq-answer">
-                        <p>写真を撮って、洗濯ルールを設定するだけの30秒で完了します。ブランド名なども自動で候補が表示されるので、入力の手間もありません。</p>
+                        <p>写真を撮ってカテゴリを選ぶだけの30秒で完了します。洗濯ルールはデフォルトで3回に設定されており、後から変更も可能です。ブランド名などの詳細情報も後から追加できるので、最初は簡単に始められます。</p>
                     </div>
                 </details>
                 <details class="faq-item">
@@ -286,7 +307,7 @@
                         <span class="faq-icon">+</span>
                     </summary>
                     <div class="faq-answer">
-                        <p>ワンタップで記録完了！ウィジェット機能を使えば、アプリを開かずにホーム画面から直接記録することも可能です。</p>
+                        <p>アイテムと日付を選択するだけの簡単操作で記録完了！記録し忘れた場合も、過去の日付に遡って登録することができるので安心です。</p>
                     </div>
                 </details>
                 <details class="faq-item">
@@ -304,7 +325,7 @@
                         <span class="faq-icon">+</span>
                     </summary>
                     <div class="faq-answer">
-                        <p>はい、いつでも簡単に解約できます。アプリの設定画面から数タップで解約可能で、解約後も期間終了まではプレミアム機能をご利用いただけます。</p>
+                        <p>はい、いつでも解約できます。iOSの場合は「設定」→「サブスクリプション」から、Androidの場合はGoogle Play Storeの「定期購入」から解約手続きを行ってください。解約後も期間終了まではプレミアム機能をご利用いただけます。</p>
                     </div>
                 </details>
             </div>
