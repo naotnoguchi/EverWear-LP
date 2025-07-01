@@ -765,11 +765,40 @@ details[open] .faq-icon {
 
     /* ナビゲーション */
     .nav-menu {
-        display: none;
+        position: fixed;
+        top: 77px;
+        right: -100%;
+        width: 80%;
+        max-width: 300px;
+        height: calc(100vh - 77px);
+        background: white;
+        flex-direction: column;
+        padding: 2rem;
+        gap: 1.5rem;
+        box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+        transition: right 0.3s ease;
+        overflow-y: auto;
+        display: flex;
+    }
+    
+    .nav-menu.active {
+        right: 0;
     }
 
     .nav-toggle {
         display: block;
+    }
+    
+    .nav-toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translate(4px, 4px);
+    }
+    
+    .nav-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .nav-toggle.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(4px, -4px);
     }
 
     /* ヒーロー */
