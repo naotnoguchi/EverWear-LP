@@ -12,32 +12,27 @@
     <link rel="stylesheet" href="css/style.css">
     <style>
         .lang-switch {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            z-index: 1000;
-            background: rgba(255, 255, 255, 0.9);
-            padding: 8px 16px;
-            border-radius: 20px;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(0, 0, 0, 0.1);
+            background: rgba(52, 152, 219, 0.1);
+            padding: 6px 12px;
+            border-radius: 15px;
+            border: 1px solid rgba(52, 152, 219, 0.2);
+            transition: all 0.3s ease;
+        }
+        .lang-switch:hover {
+            background: rgba(52, 152, 219, 0.2);
         }
         .lang-switch a {
             color: #3498db;
             text-decoration: none;
             font-weight: 500;
-            font-size: 14px;
+            font-size: 13px;
         }
         .lang-switch a:hover {
-            opacity: 0.7;
+            color: #2980b9;
         }
     </style>
 </head>
 <body>
-    <!-- Language Switch -->
-    <div class="lang-switch">
-        <a href="en/index.html">English</a>
-    </div>
     <!-- ヘッダー -->
     <header class="header">
         <nav class="nav container">
@@ -50,6 +45,7 @@
                 <li><a href="#faq">FAQ</a></li>
                 <li><a href="privacy.html">プライバシーポリシー</a></li>
                 <li><a href="terms.html">利用規約</a></li>
+                <li class="lang-switch"><a href="en/index.html">English</a></li>
             </ul>
             <button class="nav-toggle" aria-label="メニューを開く">
                 <span></span>
@@ -77,7 +73,7 @@
                     <span class="badge">🌱 環境にやさしい</span>
                 </div>
                 <div class="hero-cta">
-                    <a href="https://apps.apple.com/jp/app/everwear-洋服の着用と洗濯の履歴を管理" class="btn btn-primary">
+                    <a href="https://apps.apple.com/jp/app/everwear-closet-laundry-log/id6747334347" class="btn btn-primary">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M17.05 7.91C16.91 4.23 13.69 1.28 9.99997 1.28C9.99997 1.28 9.99997 1.28 9.98997 1.28C6.30997 1.28 3.08997 4.23 2.93997 7.91C2.77997 11.87 5.79997 15.22 9.57997 15.66V18.72H7.91997C7.50997 18.72 7.16997 19.06 7.16997 19.47C7.16997 19.88 7.50997 20.22 7.91997 20.22H12.08C12.49 20.22 12.83 19.88 12.83 19.47C12.83 19.06 12.49 18.72 12.08 18.72H10.42V15.66C14.21 15.22 17.22 11.87 17.05 7.91Z" fill="white"/>
                         </svg>
@@ -369,7 +365,7 @@
                 EverWearで、新しい洋服管理を始めましょう。
             </p>
             <div class="cta-buttons">
-                <a href="https://apps.apple.com/jp/app/everwear-洋服の着用と洗濯の履歴を管理" class="btn btn-primary">
+                <a href="https://apps.apple.com/jp/app/everwear-closet-laundry-log/id6747334347" class="btn btn-primary">
                     App Storeでダウンロード
                 </a>
                 <a href="#" class="btn btn-secondary">

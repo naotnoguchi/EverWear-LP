@@ -15,24 +15,23 @@
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
         }
         .lang-switch {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            z-index: 1000;
-            background: rgba(255, 255, 255, 0.9);
-            padding: 8px 16px;
-            border-radius: 20px;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(0, 0, 0, 0.1);
+            background: rgba(52, 152, 219, 0.1);
+            padding: 6px 12px;
+            border-radius: 15px;
+            border: 1px solid rgba(52, 152, 219, 0.2);
+            transition: all 0.3s ease;
+        }
+        .lang-switch:hover {
+            background: rgba(52, 152, 219, 0.2);
         }
         .lang-switch a {
             color: #3498db;
             text-decoration: none;
             font-weight: 500;
-            font-size: 14px;
+            font-size: 13px;
         }
         .lang-switch a:hover {
-            opacity: 0.7;
+            color: #2980b9;
         }
         .legal-content {
             max-width: 800px;
@@ -107,11 +106,6 @@
     </style>
 </head>
 <body>
-    <!-- Language Switch -->
-    <div class="lang-switch">
-        <a href="../terms.html">日本語</a>
-    </div>
-
     <!-- Header -->
     <header class="header">
         <nav class="nav container">
@@ -122,6 +116,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="privacy.html">Privacy Policy</a></li>
                 <li><a href="terms.html">Terms of Service</a></li>
+                <li class="lang-switch"><a href="../terms.html">日本語</a></li>
             </ul>
             <button class="nav-toggle" aria-label="Open menu">
                 <span></span>
