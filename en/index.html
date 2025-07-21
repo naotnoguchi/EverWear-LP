@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EverWear - Make Your Favorite Clothes Last Forever</title>
+    <meta name="description" content="EverWear extends the lifespan of your clothes with proper washing frequency, making it wallet-friendly and environmentally conscious. Track wearing counts and get notified of optimal washing timing.">
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+        .lang-switch {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 8px 16px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        .lang-switch a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 14px;
+        }
+        .lang-switch a:hover {
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+    <!-- Language Switch -->
+    <div class="lang-switch">
+        <a href="../index.html">日本語</a>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav-logo">
+                <img src="../images/logotype.png" alt="EverWear" class="logo-img">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms of Service</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Open menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Make Your Favorite Clothes<br>
+                    <span class="highlight">Last Forever</span>
+                </h1>
+                <p class="hero-description">
+                    Extend your clothes' lifespan with proper washing frequency,<br>
+                    making it wallet-friendly and environmentally conscious
+                </p>
+                <div class="hero-badges">
+                    <span class="badge">✨ Extend Clothes Lifespan</span>
+                    <span class="badge">💰 Reduce Laundry Costs</span>
+                    <span class="badge">🌱 Eco-Friendly</span>
+                </div>
+                <div class="hero-cta">
+                    <a href="https://apps.apple.com/jp/app/everwear-洋服の着用と洗濯の履歴を管理" class="btn btn-primary">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.05 7.91C16.91 4.23 13.69 1.28 9.99997 1.28C9.99997 1.28 9.99997 1.28 9.98997 1.28C6.30997 1.28 3.08997 4.23 2.93997 7.91C2.77997 11.87 5.79997 15.22 9.57997 15.66V18.72H7.91997C7.50997 18.72 7.16997 19.06 7.16997 19.47C7.16997 19.88 7.50997 20.22 7.91997 20.22H12.08C12.49 20.22 12.83 19.88 12.83 19.47C12.83 19.06 12.49 18.72 12.08 18.72H10.42V15.66C14.21 15.22 17.22 11.87 17.05 7.91Z" fill="white"/>
+                        </svg>
+                        Download on App Store
+                    </a>
+                    <a href="#" class="btn btn-secondary">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.5 1.5L11.5 10L1.5 18.5V1.5Z" fill="currentColor"/>
+                            <path d="M13.5 8L17.5 4L11.5 10L17.5 16L13.5 12" fill="currentColor"/>
+                        </svg>
+                        Get it on Google Play
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="phone-mockup">
+                    <img src="../images/screen-shot_home.png" alt="EverWear App Screenshot" class="app-screenshot">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problem">
+        <div class="container">
+            <h2 class="section-title">Do You Have These Problems?</h2>
+            <div class="problem-grid">
+                <div class="problem-item">
+                    <div class="problem-icon">👔</div>
+                    <h3>Clothes Get Damaged from Over-washing</h3>
+                    <p>Your favorite clothes fade, lose shape, or get damaged from frequent washing...</p>
+                </div>
+                <div class="problem-item">
+                    <div class="problem-icon">💸</div>
+                    <h3>Laundry Costs Add Up</h3>
+                    <p>Washing every time adds up - water bills, electricity, and detergent costs become significant</p>
+                </div>
+                <div class="problem-item">
+                    <div class="problem-icon">🤔</div>
+                    <h3>Don't Know When to Wash</h3>
+                    <p>Can't remember how many times you've worn something, making it hard to decide when to wash</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="solution">
+        <div class="container">
+            <h2 class="section-title">EverWear Solves This</h2>
+            <div class="solution-content">
+                <div class="solution-text">
+                    <h3>Make Your Clothes Last Longer with Optimal Washing Frequency</h3>
+                    <p>
+                        EverWear is a clothing management app that tracks wearing counts and notifies you of optimal washing timing.
+                        Set rules like "wash after 3 wears" and significantly extend your clothes' lifespan.
+                    </p>
+                    <ul class="solution-list">
+                        <li>✅ Automatic wear count tracking</li>
+                        <li>✅ Washing timing notifications</li>
+                        <li>✅ Optimal management for each garment</li>
+                    </ul>
+                </div>
+                <div class="solution-image">
+                    <div class="stats-card">
+                        <div class="stat-item">
+                            <span class="stat-number">50%</span>
+                            <span class="stat-label">Reduced Washing</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">2x</span>
+                            <span class="stat-label">Longer Lifespan</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">$30</span>
+                            <span class="stat-label">Monthly Savings</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Key Features</h2>
+            <div class="features-showcase">
+                <div class="feature-with-image">
+                    <div class="feature-content">
+                        <div class="feature-card">
+                            <div class="feature-icon">📸</div>
+                            <h3>Easy Registration</h3>
+                            <p>Just take a photo and select a category. Registration completed in 30 seconds with default settings.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">👆</div>
+                            <h3>One-Tap Recording</h3>
+                            <p>Simple operation - just select item and date. You can also add past records retroactively.</p>
+                        </div>
+                    </div>
+                    <div class="feature-image">
+                        <img src="../images/screen-shot_item.png" alt="Item Detail Screen" class="feature-screenshot">
+                    </div>
+                </div>
+                
+                <div class="feature-with-image reverse">
+                    <div class="feature-content">
+                        <div class="feature-card">
+                            <div class="feature-icon">📅</div>
+                            <h3>History Calendar</h3>
+                            <p>See what you wore when at a glance with the calendar view. Great for outfit reflection too.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">📊</div>
+                            <h3>Laundry Management</h3>
+                            <p>View washing timing for each item in a list. Optimal timing at a glance.</p>
+                        </div>
+                    </div>
+                    <div class="feature-image">
+                        <img src="../images/screen-shot_history.png" alt="History Calendar Screen" class="feature-screenshot">
+                    </div>
+                </div>
+                
+                <div class="feature-with-image">
+                    <div class="feature-content">
+                        <div class="feature-card">
+                            <div class="feature-icon">📊</div>
+                            <h3>Statistics & Analytics</h3>
+                            <p>Visualize washing efficiency and environmental contribution with graphs. See your savings with data.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">🏆</div>
+                            <h3>Badge System</h3>
+                            <p>Earn badges for achieving goals. Gamification makes it fun to continue.</p>
+                        </div>
+                    </div>
+                    <div class="feature-image">
+                        <img src="../images/screen-shot_stats.png" alt="Statistics & Analytics Screen" class="feature-screenshot">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How-to Section -->
+    <section class="how-to">
+        <div class="container">
+            <h2 class="section-title">Simple 3 Steps</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Register Clothes</h3>
+                    <p>Take a photo and select category (default washing rule: 3 wears)</p>
+                </div>
+                <div class="step-arrow">→</div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Record Wearing</h3>
+                    <p>One tap each time you wear. Remaining wear count is displayed</p>
+                </div>
+                <div class="step-arrow">→</div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Wash at Optimal Timing</h3>
+                    <p>Wash when you reach the set count. Your clothes last longer!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2 class="section-title">Pricing Plans</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3 class="pricing-title">Free Plan</h3>
+                    <div class="pricing-price">
+                        <span class="price-amount">$0</span>
+                        <span class="price-period">/month</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✅ Up to 5 items registration</li>
+                        <li>✅ Wear & wash recording</li>
+                        <li>✅ Advanced statistics & analytics</li>
+                        <li>❌ Unlimited item registration</li>
+                        <li>❌ Environmental impact report</li>
+                    </ul>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="pricing-badge">Recommended</div>
+                    <h3 class="pricing-title">Premium Plan</h3>
+                    <div class="pricing-price">
+                        <span class="price-amount">$4.99</span>
+                        <span class="price-period">/month</span>
+                    </div>
+                    <p class="pricing-note">Annual plan: $39.99 (equivalent to $3.33/month)</p>
+                    <ul class="pricing-features">
+                        <li>✅ Unlimited item registration</li>
+                        <li>✅ All basic features</li>
+                        <li>✅ Advanced statistics & analytics</li>
+                        <li>✅ Environmental impact report</li>
+                        <li>✅ Data export functionality</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section class="impact">
+        <div class="container">
+            <h2 class="section-title">EverWear's Impact</h2>
+            <div class="impact-grid">
+                <div class="impact-card">
+                    <div class="impact-icon">👕</div>
+                    <h3>Double Your Clothes' Lifespan</h3>
+                    <p>Proper washing frequency makes your favorite clothes last longer. Reduce replacement frequency and save money.</p>
+                </div>
+                <div class="impact-card">
+                    <div class="impact-icon">💰</div>
+                    <h3>Save $360 Annually</h3>
+                    <p>Significantly cut water, electricity, and detergent costs by reducing washing frequency.</p>
+                </div>
+                <div class="impact-card">
+                    <div class="impact-icon">🌱</div>
+                    <h3>Reduce CO2 by 265lbs/Year</h3>
+                    <p>Halving washing frequency significantly reduces environmental impact. Achieve sustainable living.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-list">
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        Isn't registering clothes troublesome?
+                        <span class="faq-icon">+</span>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>It takes just 30 seconds - simply take a photo and select a category. Washing rules default to 3 wears and can be changed later. You can add detailed information like brand names later, so you can start simply.</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        Recording every time seems difficult
+                        <span class="faq-icon">+</span>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>Recording is completed with simple operation - just select item and date! If you forget to record, you can add past dates retroactively, so don't worry.</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        Do clothes really last longer?
+                        <span class="faq-icon">+</span>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>Yes. Washing is the most damaging activity for clothes. Avoiding unnecessary washing prevents fabric deterioration and significantly extends clothes' lifespan.</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        Is canceling Premium Plan easy?
+                        <span class="faq-icon">+</span>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>Yes, you can cancel anytime. For iOS, go to "Settings" → "Subscriptions", for Android, go to Google Play Store "Subscriptions" to cancel. You can continue using Premium features until the end of your billing period after cancellation.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2 class="cta-title">
+                Start Today:<br>
+                Sustainable Fashion Life
+            </h2>
+            <p class="cta-description">
+                To wear your favorite clothes longer and with care.<br>
+                Start your new clothing management with EverWear.
+            </p>
+            <div class="cta-buttons">
+                <a href="https://apps.apple.com/jp/app/everwear-洋服の着用と洗濯の履歴を管理" class="btn btn-primary">
+                    Download on App Store
+                </a>
+                <a href="#" class="btn btn-secondary">
+                    Get it on Google Play
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="../images/icon.png" alt="EverWear" class="footer-logo">
+                    <img src="../images/logotype_white.png" alt="EverWear" class="footer-logotype">
+                    <p>Make Your Favorite Clothes Last Forever</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-legal">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 EverWear. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html> 
